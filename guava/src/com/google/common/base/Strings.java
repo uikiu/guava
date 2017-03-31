@@ -46,6 +46,7 @@ public final class Strings {
    *
    * @param string the string to test and possibly return
    * @return {@code string} itself if it is nonempty; {@code null} if it is empty or null
+   * 返回null或者字符串自身  
    */
   @Nullable
   public static String emptyToNull(@Nullable String string) {
@@ -62,6 +63,10 @@ public final class Strings {
    *
    * @param string a string reference to check
    * @return {@code true} if the string is null or is the empty string
+   * -----------------------------------------------------------------------------------------------
+   * 如果给定的string为null或者为空返回true，否则返回false
+   *
+   *
    */
   public static boolean isNullOrEmpty(@Nullable String string) {
     return Platform.stringIsNullOrEmpty(string);
